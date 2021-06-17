@@ -1,0 +1,16 @@
+
+
+print("What is your name?")
+name = input()
+print("I forgot to care")
+print("Srry about that")
+
+def ask(question, answer):
+  print(question)
+  response = input().lower()
+  if response == answer:
+    print(":)")
+  else:
+    print("Wrong, try again.")
+    ask(question, answer)
+ask("Does pinapple belong on pizza?", "no")
