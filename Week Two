@@ -1,0 +1,20 @@
+questions = [("question?","answer"),
+              ("a?","a"),
+              ("b?","b")]
+
+def ask_questions():
+  score = 0
+  for question in questions:
+    print(question[0])
+    response = input().lower()
+    if response == question[1]:
+      score += 1
+      print("correct")
+    else:
+      print("wrong")
+      
+  return score
+
+while True:
+  score = ask_questions()
+  print("you completed the quiz you score was "+str(score))
